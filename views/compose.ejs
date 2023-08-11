@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPOSE</title>
+    <link rel="icon" href="gk.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/compose.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+        <%- include("partial/header") -%>
+    </div>
+    <div class="out">
+        <form action="/compose" method="post">
+            <div class="form-group" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                <h1 class="hed">
+                    COMPOSE
+                </h1>
+                
+                    <div class="in" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                        <label>Title</label>
+                        <input type="text" name="title" class="form-control">
+                        <lable>Content</lable>
+                        <textarea class="form-control" id="p" name="content" rows="5" cols="100"></textarea>
+                    </div>
+                    <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                        <button type="submit name=button" class="btn btn-primary" id="button">Publish</button> 
+                    </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

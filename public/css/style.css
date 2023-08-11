@@ -1,0 +1,145 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+@font-face {
+    font-family: a;
+    src: url(CinderelaPersonalUseRegular-RDvM.ttf);
+}
+
+@font-face {
+    font-family: b;
+    src: url(Angelina-rnlA.otf);
+}
+
+@font-face {
+    font-family: c;
+    src: url(BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+
+@font-face {
+    font-family: d;
+    src: url(Cornetta-EaLVn.ttf);
+}
+
+@font-face {
+    font-family: e;
+    src: url(TfcaredogdemoRegular-d96rE.otf);
+}
+
+@font-face {
+    font-family: f;
+    src: url(TfCaredogDemoRegular-PK6Vx.ttf);
+}
+
+@font-face {
+    font-family: g;
+    src: url(Untlang-1G1rB.ttf);
+}
+
+@font-face {
+    font-family: h;
+    src: url(TT\ Smalls\ Trial\ ExtraBold\ Italic.otf);
+}
+
+@font-face {
+    font-family: i;
+    src: url(Unknown\ Galaxy.otf);
+}
+
+@font-face {
+    font-family: j;
+    src: url(Unknown\ Galaxy\ Italic.otf);
+}
+
+@font-face {
+    font-family: k;
+    src: url(VanemNonCommercial.ttf);
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(89, 224, 179);
+    box-shadow: 5px 5px  15px -5px black;
+    font-size: 20px;
+    height: 80px;
+}
+
+header h1{
+    margin-left: 20px;
+    color: rgb(168, 79, 241);
+    font-family: d;
+}
+
+nav.navi{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-top: -50px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav.navi a{
+    text-decoration: none;
+    color: rgb(88, 85, 85);
+    font-family: h;
+    margin-right: 5px;
+}
+
+#home{
+    margin-top: 100px;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+button.bu{
+    background: rgb(132, 228, 215);
+    border: 2px solid black;
+    color: black;
+    height: 40px;
+    width: 250px;
+    padding: 0 30px;
+    border-radius: 50px;
+}
+
+.combutton{
+    color: black;
+}
+
+.combutton:hover{
+    color: rgb(132, 228, 215);;
+}
+
+button.bu:hover{
+    background: black;
+}
+
+button a.combutton{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home p{
+    font-size: 25px;
+}
+
+@media(max-width:500px) {
+    header{
+        width: 500px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    nav.navi a{
+        font-size: 15px;
+    }
+    nav.navi{
+        margin-right: -55px;
+    }
+}

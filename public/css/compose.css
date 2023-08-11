@@ -1,0 +1,20 @@
+.hed{
+    margin-top: 50px;
+}
+
+.out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    margin-top: 10px;
+    justify-content: center;
+}
+
+@media(max-width:500px){
+    .out{
+        padding: 0 30px;
+    }
+}
